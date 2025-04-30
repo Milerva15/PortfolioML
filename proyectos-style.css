@@ -38,21 +38,74 @@ body{
   /*encabezado */
 .encabezado{
     display: flex;
-    justify-content: center;
-    align-items: center;
     background-color: var(--violeta);
     height: 20rem;
 }
 .encabezado-text{
     font-family: var(--tipografía);
-    font-weight: var(--regular);
+    font-weight: var(--bold);
     font-size: 2rem;
     color: var(--blanco);
+    margin: 5rem 5rem 0 20rem;
 }
 .encabezado-titulo{
     font-family: var(--tipografía);
     font-weight: var(--bold);
     font-size: 6rem;
     color: var(--blanco);
+    margin: 6rem 0 0 0;
 }
   
+/*sobre mi*/
+#sobre-mi{
+    display: flex;
+    margin-top: 2rem;
+    /*align-items: center;*/
+    justify-content: center;
+}
+
+#sobre-mi div{
+    margin: 3rem;
+}
+  
+
+.sobre-mi-texto{
+    border: .5rem solid var(--violeta);
+    padding: 1rem;
+    height: auto;
+    position: relative;
+}
+@media (min-width: 1660px) {
+    .sobre-mi-texto{
+        height: 20rem;
+    }
+}
+
+.sobre-mi-texto h2{
+    margin: 0;
+    padding: 0 1rem 0 1rem;
+    background-color: var(--blanco);
+    margin-top: -4rem;
+    margin-left: 1rem;
+    width: 32rem;
+    font-family: var(--tipografía);
+    font-weight: var(--bold);
+    font-size: 3rem;
+    position: absolute;
+}
+.sobre-mi-texto p{
+    margin: 0;
+    padding-bottom: 0;
+    padding: 2rem;
+    font-family: var(--tipografía);
+    font-weight: var(--regular);
+    font-size: 2rem;
+}
+.sobre-mi-img{
+    border-radius: 20%;
+}
+  
+.sobre-mi-img img{
+    width:25rem;
+    transform: scaleX(-1);
+}
