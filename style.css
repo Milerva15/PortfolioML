@@ -155,7 +155,17 @@ body{
 .skills{
   display: flex;
   flex-direction: column;
-  padding: 0 4rem 0 ;
+  justify-content: space-around;
+  align-items: center;
+}
+.skills-div{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 97rem;
+}
+.skills-text{
+  margin: 0%;
 }
 .skills h2{
   font-family: var(--tipografía);
@@ -171,17 +181,27 @@ body{
   font-family: var(--tipografía);
   font-weight: var(--regular);
 }
-.software-skills{
-  padding: 0 4rem 0 ;
+.imagen-skills{
+  margin: 0;
 }
-.software-skills h2{
+.imagen-skills img{
+  height: 30rem;
+}
+.software-skills{
+  display: flex;
+  flex-direction: column;
+  padding: 0 4rem 0;
+  justify-content: center;
+  align-items: center;
+}
+
+.software-text h2{
   font-family: var(--tipografía);
   font-weight: var(--bold);
   font-size: 5rem;
   margin: 2rem 0 0 0;
 }
-
-.software-skills div{
+.software-imagen{
   display: grid;
   grid-template-columns: repeat(6, 1fr);
   max-width: 120rem;  
@@ -190,11 +210,10 @@ body{
   justify-content: center;
   padding: 2rem;
 }
-.software-skills img{
+.software-imagen img{
   margin-bottom: 3rem;
   width: 12rem;
 }
-
 /*educacion*/
 .educacion{
   display: flex;
@@ -343,17 +362,12 @@ body{
 }
 #contacto input{
   height: 2.5rem;
- 
- 
- 
 }
 #contacto .nombre{
   margin-right:2rem;
-  
 }
 #contacto .telefono{
   margin-left: 2rem;
-  
 }
 .mail-input{
   width: 70rem;
@@ -387,6 +401,12 @@ footer{
   background-color: var(--lila);
   justify-content: space-evenly;
 }
+.footer{
+  display: flex;
+  flex-direction: row;
+  gap: 65rem;
+  margin: 0 0 5rem 0;
+}
 .footer-content{
   justify-content: space-between !important;
   width: 60%;
@@ -403,6 +423,36 @@ footer p{
   font-size: 1.7rem;
   margin: 0;
 }
+.imagenes-footer{
+  margin-left: 0;
+}
 footer img{
-  width: 5rem;
+  width: auto;
+  height: 4rem;
+  margin: 0 0 0 2rem;
+  left: 0%;
+}
+
+@media (max-width: 768px) {
+  .skills h2,
+  .software-skills h2,
+  .educacion h2,
+  .contacto-text h2 {
+    font-size: 3rem;
+  }
+
+  .skills li,
+  .software-skills img,
+  .educacion-img-contenedor img,
+  .content-text p {
+    font-size: 1.6rem;
+  }
+
+  .content-text h2 {
+    font-size: 6rem;
+  }
+
+  .boton-enviar {
+    width: 100%;
+  }
 }
