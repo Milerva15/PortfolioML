@@ -205,7 +205,174 @@ body{
     padding: 4rem;
     border-radius: 1.6rem;
 }
-
 @keyframes branding{
 
+}
+
+/*medios impresos*/
+#impresos {
+    position: relative;
+    height: 80rem;
+    margin: 1rem 0 2rem 0;
+  }
+#impresos h2{
+    font-family: var(--tipografía);
+    font-weight: var(--bold);
+    font-size: 6rem;
+    margin: 2rem 3rem;
+}
+
+.medioscarrousel {
+    width: 300vw; 
+    display: flex;
+    animation: slide 15s infinite;
+    z-index: 0;
+  }
+  
+.medioscarrousel img {
+    width: 100vw;
+    object-fit: fill;
+    flex-shrink: 0;
+  }
+  
+  /* Carrusel con pausas */
+  @keyframes slide {
+    0%   { transform: translateX(0); }
+    15%  { transform: translateX(0); }
+  
+    20%  { transform: translateX(-100vw); }
+    40%  { transform: translateX(-100vw); }
+  
+    45%  { transform: translateX(-200vw); }
+    50%  { transform: translateX(-200vw); }
+  
+    80%  { transform: translateX(0); } 
+    100% { transform: translateX(0); }
+  }
+  
+ /* .overlay-content {
+
+  }*/
+
+
+/*Diseño Ux/Ui*/
+#ux-ui h2{
+    font-family: var(--tipografía);
+    font-weight: var(--bold);
+    font-size: 6rem;
+    margin: 4rem 3rem 0;
+}
+
+#ux-ui p{
+    font-family: var(--tipografía);
+    font-weight: var(--medium);
+    font-size: 1.5rem;
+    width: 185rem;
+    margin: 0 3rem 0 3rem;
+}
+.ux-ui-center{
+    display: flex;
+    flex-direction: column;
+    padding: 0 4rem 0 ;
+    justify-content: center;
+    align-items: center;
+}
+#ux-ui h2{
+    background-color: var(--blanco);
+    font-family: var(--tipografía);
+    font-weight: var(--bold);
+    font-size: 6rem;
+    margin: 4rem 3rem;
+}
+
+.ux-ui-img{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 10rem;
+  }
+.ux-ui-img-contenedor{
+    padding: 0%;
+    margin: 4rem 0 4rem 0;
+    border-radius: 1.6rem;
+    justify-content: center;
+    align-items: center;
+   }
+   
+.ux-ui-img-contenedor img {
+    height: 20rem;
+    width: auto;
+    padding: 4rem;
+    border-radius: 1.6rem;
+}
+.servihogar{
+    background-color: var(--Violetabrillante);
+}
+.coffeecorner{
+    background-color: #A9D2D3;
+}
+.duckling{
+    background-color: #FFA006;
+}
+/*Diseño RRSS*/
+#rrss h2{
+    font-family: var(--tipografía);
+    font-weight: var(--bold);
+    font-size: 6rem;
+    margin: 4rem 3rem;
+}
+
+#audiovisual h2{
+    font-family: var(--tipografía);
+    font-weight: var(--bold);
+    font-size: 6rem;
+    margin: 4rem 3rem;
+}
+
+
+/*footer*/
+.flex-col{
+    display: flex;
+    flex-direction: column;
+  }
+  .align-justify{
+    align-items: center;
+    justify-content: center;
+  }
+footer{
+    background-color: var(--lila);
+    justify-content: space-evenly;
+}
+.footer{
+    display: flex;
+    flex-direction: row;
+    gap: 65rem;
+    margin: 0 0 5rem 0;
+    align-items: center;
+    justify-content: center;
+}
+.footer-content{
+    justify-content: space-between !important;
+    width: 60%;
+}
+footer h2{
+    font-family: var(--tipografía);
+    font-weight: var(--bold);
+    font-size: 2rem;
+    margin: 2rem;
+}
+footer p{
+    font-family: var(--tipografía);
+    font-weight: var(--medium);
+    font-size: 1.7rem;
+    margin: 0;
+}
+.imagenes-footer{
+    margin-left: 0;
+}
+footer img{
+    width: auto;
+    height: 4rem;
+    margin: 0 0 0 2rem;
+    left: 0%;
 }
