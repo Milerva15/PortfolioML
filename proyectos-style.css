@@ -57,31 +57,25 @@ body{
 }
   
 /*sobre mi*/
-#sobre-mi{
+#sobre-proyectos{
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-#sobre-mi div{
+#sobre-proyectos div{
     margin: 1rem 3rem 0 3rem;
 }
   
-
-.sobre-mi-texto{
+.sobre-proyectos-texto{
     border: .5rem solid var(--violeta);
     padding: 1rem;
     height: auto;
     position: relative;
     
 }
-@media (min-width: 1660px) {
-    .sobre-mi-texto{
-        height: 20rem;
-    }
-}
 
-.sobre-mi-texto h2{
+.sobre-proyectos-texto h2{
     margin: 0 1rem 0 0;
     padding: 0 1rem 0 1rem;
     background-color: var(--blanco);
@@ -94,7 +88,7 @@ body{
     position: absolute;
     right: 0%;
 }
-.sobre-mi-texto p{
+.sobre-proyectos-texto p{
     margin: 0;
     padding-bottom: 0;
     padding: 2rem;
@@ -103,7 +97,7 @@ body{
     font-size: 2rem;
     
 }
-.sobre-mi-img{
+.sobre-proyectos-img{
     border-radius: 20%;
     margin: 0;
 }
