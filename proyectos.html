@@ -48,46 +48,142 @@
 
     <section id="branding">
       <h2>Branding e identidad visual</h2>
-
-      <div class="branding-center">
-        <div class="branding-img" >
-          <div class="branding-img-contenedor">
-           <img src="imagenes/Proyectos/Branding/El caldero verde.png" alt="" class="imagen-boton">
-          </div>
-          <div class="branding-img-contenedor">
-            <img src="imagenes/Proyectos/Branding/Servihogar.png" alt="">
-          </div>
-          <div class="branding-img-contenedor">
-           <img src="imagenes/Proyectos/Branding/Cooking a mix.png" alt="">
-           </div>
+      <div class="container">
+        <div id="button1" class="button-branding" onclick="showImagebranding('button1', 'image1')">
+            <img src="imagenes/Proyectos/Branding/El caldero verde.png" alt="Botón 1">
         </div>
-      </div>
-
-       <!--posible ventana-->
-        <div hidden>
-          <p>Contenido caldero </p>
-          <img src="" alt="caldero">
+        <div id="button2" class="button-branding" onclick="showImagebranding('button2', 'image2')">
+            <img src="imagenes/Proyectos/Branding/Servihogar.png" alt="Botón 2">
         </div>
-        <div>
-          <p>Servihogar-contenido</p>
-          <img src="" alt="servi">
+        <div id="button3" class="button-branding" onclick="showImagebranding('button3', 'image3')">
+            <img src="imagenes/Proyectos/Branding/Cooking a mix.png" alt="Botón 3">
         </div>
-        <div>
-          <p>
-            Cooking a mix
-          </p>
-          <img src="" alt="mix">
+    </div>
+    
+    <div class="container">
+        <div id="image1" class="image" style="display: none;">
+            <img src="imagenes/Proyectos/Branding/calderoverde.jpg" alt="">
+            <p> El caldero verde es una marca <br>
+                de mermeladas y encurtidos artesanales <br>
+                inspirada en la magia de las “brujas verdes”. <br>
+                Este diseño busca transmitir lo natural <br>
+                y lo hecho a mano, con un caldero como <br>
+                símbolo central y un triskel celta que <br>
+                refuerza la conexión con la naturaleza y la <br>
+                transformación.</p>
         </div>
-      
+        <div id="image2" class="image" style="display: none;">
+            <img src="imagenes/Proyectos/Branding/servihogar.jpg" alt="">
+            <p> ServiHogar es una app que conecta <br>
+                usuarios con profesionales del hogar.<br>
+                El logo fue pensado con una estética moderna <br>
+                y limpia, ideal para aplicaciones móviles. <br>
+                Se priorizó la legibilidad en tamaños pequeños,<br>
+                utilizando una tipografía clara y un isotipo<br>
+                simple que representa un hogar conectado.</p>
+        </div>
+        <div id="image3" class="image" style="display: none;">
+            <img src="imagenes/Proyectos/Branding/cookingamix.jpg" alt="">
+            <p> Cooking a Mix es estudio de grabación <br>
+                especializado en producción, mezcla y <br>
+                masterización musical.<br>
+                Se creó una tipografía personalizada <br>
+                integrando elementos del mundo sonoro <br>
+                —como un vinilo en la “C” y un ecualizador <br>
+                en la “M”—, reflejando la fusión entre lo <br>
+                clásico y lo digital.</p>
+        </div>
+    </div>
+    
+    <div class="container">
+        <button id="back" class="back-button hidden" onclick="resetButtonsbranding()">Volver</button>
+    </div>
+    
+    <script>
+        function showImagebranding(buttonId, imageId) {
+            // Ocultar todos los botones y mostrar la imagen seleccionada
+            document.querySelectorAll('.button-branding').forEach(btn => btn.classList.add('hidden'));
+            document.getElementById(imageId).style.display = 'block';
+            document.getElementById('back').style.display = 'block';
+        }
+    
+        function resetButtonsbranding() {
+            // Mostrar todos los botones y ocultar las imágenes
+            document.querySelectorAll('.button-branding').forEach(btn => btn.classList.remove('hidden'));
+            document.querySelectorAll('.image').forEach(img => img.style.display = 'none');
+            document.getElementById('back').style.display = 'none';
+        }
+    </script>
     </section>
 
     <section id="impresos">
       <h2>Medios Impresos</h2>
-      <div class="medioscarrousel">
-        <img src="imagenes/Proyectos/impresos/reyparvis.jpg" alt="Imagen 1">
-        <img src="imagenes/Proyectos/impresos/expografika.jpg" alt="Imagen 2">
-        <img src="imagenes/Proyectos/impresos/bateria.jpg" alt="Imagen 3">
+      <div class="medioscarousel">
+        <div class="carousel-images" id="carouselImages">
+          <div class="reyparvis">
+            <img src="imagenes/Proyectos/impresos/reyparvis.jpg" alt="Imagen 1">
+            <p class="text-reyparvis">Este mockup presenta una propuesta visual para <br> 
+              promocionar la participación de la banda Rey Parvis <br>
+              en la edición 2023 del festival Ciudad Emergente. <br>
+              El diseño busca combinar el espíritu joven y urbano <br>
+              del evento con una estética natural y vibrante, <br>
+              utilizando una tipografía retro y una paleta cálida con <br>
+              acentos florales. La composición incluye elementos <br>
+              reales (foto de la banda) y gráficos intervenidos <br>
+              digitalmente para lograr una integración visual <br>
+              coherente y llamativa. <br>
+              El objetivo fue crear una pieza de comunicación clara, <br>
+              atractiva y con identidad, que funcione tanto en <br>
+              espacios físicos como digitales.</p>
+          </div> 
+          <div class="expo">
+            <img src="imagenes/Proyectos/impresos/expografika.jpg" alt="Imagen 2">
+            <p class="text-expo">Este diseño propone una pieza gráfica para la <br> 
+              comunicación de Expográfika 2023. <br> 
+              La estética elegida fusiona dinamismo y modernidad <br> 
+              a través del uso de formas geométricas, colores <br> 
+              vibrantes y una composición limpia sobre fondo <br> 
+              blanco, resaltando la identidad del evento y <br> 
+              generando impacto visual en espacios públicos. <br> 
+              El tratamiento tipográfico busca equilibrio entre <br> 
+              legibilidad y presencia, mientras que los elementos <br> 
+              gráficos refuerzan la idea de creatividad en <br> 
+              movimiento. <br> 
+              El resultado es un banner llamativo, profesional y <br> 
+              acorde a la temática del evento</p>
+          </div>
+          <div class="bateria">
+            <img src="imagenes/Proyectos/impresos/bateria.jpg" alt="Imagen 3">
+            <p>Pieza gráfica destinada a la promoción de <br> 
+              clases individuales de batería. El objetivo fue <br> 
+              transmitir una estética clara, directa y profesional <br> 
+              que resulte atractiva tanto para principiantes como <br> 
+              para músicos con experiencia. <br> 
+              Se optó por una ilustración en estilo boceto <br> 
+              para reforzar la identidad artística y artesanal del  <br>
+              servicio, en combinación con una tipografía sans serif  <br>
+              moderna y bien jerarquizada que permite una lectura <br> rápida y 
+              efectiva. <br> 
+              El diseño busca equilibrar la información esencial <br> 
+              (temario, contacto y ubicación) con una estética <br> 
+              minimalista, generando un flyer adaptable tanto a <br> 
+              formato impreso como digital.</p>
+          </div>
+        </div>
+        <button class="previmpresos" onclick="moveCarouselImpresos(-1)">&#10094;</button>
+        <button class="nextimpresos" onclick="moveCarouselImpresos(1)">&#10095;</button>
       </div>
+    
+      <script>
+        let currentIndexImpresos = 0;
+    
+        function moveCarouselImpresos(direction) {
+          const carousel = document.getElementById("carouselImages");
+          const totalImages = carousel.children.length;
+          currentIndexImpresos = (currentIndexImpresos + direction + totalImages) % totalImages;
+          carousel.style.transform = `translateX(-${currentIndexImpresos * 100}%)`;
+        }
+      </script>
     </section>
 
     <section id="ux-ui">
@@ -118,12 +214,42 @@
 
     <section id="rrss">
       <h2>Diseño de las RRSS</h2>
+      <div class="buttons-container">
+        <button onclick="showImagerrss('imagefashion')"><img class="image-button" src="imagenes/Proyectos/RRSS/fashion IG 2.png" alt=""></button>
+        <button onclick="showImagerrss('imageplants')"><img class="image-button" src="imagenes/Proyectos/RRSS/Plantas IG 2.png" alt=""></button>
+      </div>
+
+      <div id="imagefashion" class="image-containerf" onclick="showButtonsrrss()">
+        <img class="image" src="imagenes/Proyectos/RRSS/Fashion IG 1.png" alt="Imagen 1">
+      </div>
+      <div id="imageplants" class="image-containerp" onclick="showButtonsrrss()">
+        <img class="image" src="imagenes/Proyectos/RRSS/Plantas IG 1.png" alt="Imagen 2">
+      </div>
+
+
+      <script>
+        function showImagerrss(id) {
+          document.querySelector('.buttons-container').style.display = 'none';
+          document.querySelectorAll('.image-containerp').forEach(img => img.style.display = 'none');
+          document.querySelectorAll('.image-containerf').forEach(img => img.style.display = 'none');
+          document.getElementById(id).style.display = 'flex';
+        }
+
+        function showButtonsrrss() {
+          document.querySelectorAll('.image-containerp').forEach(img => img.style.display = 'none');
+          document.querySelectorAll('.image-containerf').forEach(img => img.style.display = 'none');
+          document.querySelector('.buttons-container').style.display = 'flex';
+        }
+      </script>
     </section>
 
     <section id="audiovisual">
       <h2>Producción audiovisual</h2>
-      <div class="video">
+      <div class="video-container">
+        <video src="imagenes/Proyectos/audiovisual/Carullo_Diaz_Fuentes_Lequio_Rioseco_TpFinal.mp4" controls></video>
       </div>
+    </section>
+    
     </section>
   </body>
 
