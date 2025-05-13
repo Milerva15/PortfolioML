@@ -416,7 +416,7 @@ body{
     width: 100%;
     cursor: pointer;
 }
-.image{
+.imageplants, .imagefashion{
     height: 65rem;
 }
 .image-button{
