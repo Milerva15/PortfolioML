@@ -166,7 +166,7 @@ body{
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-   gap: 9rem;  
+   gap: 100rem;  
 }
 .skills-text{
   margin: 0%;
