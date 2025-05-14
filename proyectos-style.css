@@ -490,7 +490,7 @@ footer h2{
     font-family: var(--tipografía);
     font-weight: var(--bold);
     font-size: 2rem;
-    margin: 2rem;
+    margin: 2rem 0 1rem 0;
 }
 footer p{
     font-family: var(--tipografía);
@@ -507,3 +507,32 @@ footer img{
     margin: 0 0 0 2rem;
     left: 0%;
 }
+
+  .sticky-link {
+    position: fixed;
+    display: flex;
+    align-items: center;
+    bottom: 2rem;
+    right: 2rem;
+    gap: .8rem;
+    box-shadow: 0 .4rem .6rem rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease;
+    background-color: var(--Violetabrillante);
+    color: var(--blanco);
+    padding: 1.2rem 1.8rem;
+    border-radius: 50px;
+    text-decoration: none;
+    font-family: var(--tipografía);
+    font-size: 2rem;
+    font-weight: bold;
+    text-align: center;
+    z-index: 1000;
+  }
+
+  .sticky-link:hover {
+    transform: scale(1.1);
+  }
+
+  .sticky-link i {
+    font-size: 20px;
+  }
